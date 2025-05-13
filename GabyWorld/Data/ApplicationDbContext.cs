@@ -1,14 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace GabyWorld.Data
 {
     /// <summary>
     /// The database model for the application
     /// </summary>
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<SettingsDataModel> Settings { get; set; }
-
+        
         /// <summary>
         /// Default constractor, expects DbContextOptions to be passed in
         /// </summary>
