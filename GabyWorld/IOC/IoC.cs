@@ -15,6 +15,8 @@ namespace GabyWorld.IOC
     {
         //service provider for this application
         public static ServiceProvider Provider { get; set; }
+
+        public static IConfiguration Configuration { get; set; }
     }
 
 

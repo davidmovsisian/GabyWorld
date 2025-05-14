@@ -1,3 +1,4 @@
+using System.Security.Principal;
 using GabyWorld.Data;
 using GabyWorld.IOC;
 using Microsoft.AspNetCore.Authorization;
@@ -62,7 +63,7 @@ namespace GabyWorld.Controllers
             return Content("User creation failed", "text/html");
         }
 
-        [Authorize]
+        [Authorize(AuthenticationSchemes = "Identity.Application")]//cookies authorization
         [Route("private")]
         public IActionResult Private()
         {
@@ -75,9 +76,10 @@ namespace GabyWorld.Controllers
             //sign out previous session
             await _signInManager.SignOutAsync();
 
-            //try to log in
+            // This creates the authentication cookie
+            //Sets it on the response via the authentication middleware.
             var result = await _signInManager.PasswordSignInAsync("DavidM", "password", true, false);
-            //if login succeedd
+
             if(result.Succeeded)
             {
                 //if we 
