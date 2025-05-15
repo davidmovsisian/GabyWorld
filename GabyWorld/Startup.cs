@@ -93,7 +93,15 @@ namespace GabyWorld
                 });
             #endregion
 
-
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.WithOrigins("http://localhost:3000")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
 
             services.AddMvc();
             services.AddMvc(options => options.EnableEndpointRouting = false);
@@ -102,6 +110,8 @@ namespace GabyWorld
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
         {
+            app.UseCors();
+
             app.UseAuthentication();//the authentication midleware used services added in ConfigureServices.
 
             if (env.IsDevelopment())

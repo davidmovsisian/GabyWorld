@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Gaby.World.Core\Gaby.World.Core.csproj" />
     <ProjectReference Include="..\Gaby.World.DAL\Gaby.World.DAL.csproj" />
   </ItemGroup>
 
