@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 
-namespace GabyWorld.Custom
+namespace GabyWorld.Authentication
 {
     public class AuthorizeTokenAttribute : AuthorizeAttribute
     {

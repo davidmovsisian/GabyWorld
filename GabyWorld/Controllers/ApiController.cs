@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authorization;
-using GabyWorld.Custom;
+using GabyWorld.Authentication;
 
 namespace GabyWorld.Controllers
 {
