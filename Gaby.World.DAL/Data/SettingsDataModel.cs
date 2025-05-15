@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace GabyWorld.Data
+namespace Gaby.World.DAL.Data
 {
     /// <summary>
     /// Settings table in DB

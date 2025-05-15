@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GabyWorld", "GabyWorld\Gaby
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlConnector", "SqlConnector\SqlConnector.csproj", "{9C29B14B-1F4B-482B-AB28-409C5451C9E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gaby.World.DAL", "Gaby.World.DAL\Gaby.World.DAL.csproj", "{ECEB83A5-16AD-43B3-9713-6BEE0A40C9F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9C29B14B-1F4B-482B-AB28-409C5451C9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C29B14B-1F4B-482B-AB28-409C5451C9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C29B14B-1F4B-482B-AB28-409C5451C9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEB83A5-16AD-43B3-9713-6BEE0A40C9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEB83A5-16AD-43B3-9713-6BEE0A40C9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEB83A5-16AD-43B3-9713-6BEE0A40C9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEB83A5-16AD-43B3-9713-6BEE0A40C9F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
 using System.Security.Principal;
-using GabyWorld.Data;
+using Gaby.World.DAL.Data;
 using GabyWorld.IOC;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;

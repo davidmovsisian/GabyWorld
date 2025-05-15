@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Gaby.World.DAL.Data;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace GabyWorld.Data
+namespace Gaby.World.DAL.Data
 {
     /// <summary>
     /// The database model for the application

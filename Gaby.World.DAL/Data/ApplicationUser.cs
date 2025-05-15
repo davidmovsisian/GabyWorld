@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace GabyWorld.Data
+namespace Gaby.World.DAL.Data
 {
     public class ApplicationUser : IdentityUser
     {

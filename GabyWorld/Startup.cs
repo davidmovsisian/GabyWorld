@@ -1,5 +1,5 @@
 ﻿using System;
-using GabyWorld.Data;
+using Gaby.World.DAL.Data;
 using GabyWorld.IOC;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

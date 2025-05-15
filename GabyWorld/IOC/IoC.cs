@@ -1,4 +1,4 @@
-﻿using GabyWorld.Data;
+﻿using Gaby.World.DAL.Data;
 
 namespace GabyWorld.IOC
 {
